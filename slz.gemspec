@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/) + [
-    *['ext/libslz/src/slz.c', 'ext/libslz/src/slz.h', 'ext/libslz/src/tables.h']
-    #"LICENSE.txt",
-    #"README.md",
+    *['ext/libslz/src/slz.c', 'ext/libslz/src/slz.h', 'ext/libslz/src/tables.h'],
+    "LICENSE",
+    "README.md",
     #"CHANGELOG.md",
   ]
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rice"
-  spec.add_development_dependency "bundler", ">= 1.0"
-  spec.add_development_dependency "rake"
+  #spec.add_development_dependency "bundler", ">= 1.0"
+  #spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
 end
