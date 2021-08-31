@@ -1,0 +1,3 @@
+[submodule "ext/libslz"]
+	path = ext/libslz
+	url = https://github.com/wtarreau/libslz.git
