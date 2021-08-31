@@ -15,6 +15,6 @@ describe "slz" do
             io.write dfl.flush
         }
         io.rewind
-        p Zlib::Inflate.new(-15).inflate(io.read) == content
+        Zlib::Inflate.new(-15).inflate(io.read).should eq content
     end
 end
