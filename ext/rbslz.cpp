@@ -47,7 +47,9 @@ extern "C"
 void Init_slz()
 {
 	auto module = Rice::define_module("Slz")
-	.const_set("SLZ_FMT_DEFLATE", Rice::detail::to_ruby((int)SLZ_FMT_DEFLATE))
+	.const_set("SLZ_FMT_GZIP", Rice::detail::to_ruby((int)SLZ_FMT_GZIP))
+    .const_set("SLZ_FMT_ZLIB", Rice::detail::to_ruby((int)SLZ_FMT_ZLIB))
+    .const_set("SLZ_FMT_DEFLATE", Rice::detail::to_ruby((int)SLZ_FMT_DEFLATE))
 	;
 
     Rice::define_class_under<slz_compressobj>(module,"Deflate")
@@ -56,4 +58,3 @@ void Init_slz()
 	.define_method("flush", &slz_compressobj::flush)
 	;
 }
-
