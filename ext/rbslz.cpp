@@ -23,7 +23,7 @@ extern "C" {
 #define RICE_CTOR_PARENSR )
 #endif
 
-inline Rice::String MakeStringFromBuffer(const char *ptr, long len){
+static inline Rice::String MakeStringFromBuffer(const char *ptr, long len){
 	return Rice::Builtin_Object<T_STRING>(RICE_PROTECT(rb_str_new, ptr, len));
 }
 
