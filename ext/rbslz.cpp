@@ -1,7 +1,11 @@
+#if RICE_VERSION >= 40000
+#include <rice/rice.hpp>
+#else
 #include <rice/Class.hpp>
 #include <rice/Constructor.hpp>
 #include <rice/Module.hpp>
 #include <rice/String.hpp>
+#endif
 
 extern "C" {
 #include "libslz/src/slz.h"
