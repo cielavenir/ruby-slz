@@ -1,3 +1,5 @@
+[![RubyGems](https://img.shields.io/gem/v/slz)](https://rubygems.org/gems/slz)
+
 ## slz
 
 a (quick) binding for http://www.libslz.org/
