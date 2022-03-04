@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.version       = '0.0.0.1' #Slz::VERSION
   spec.authors       = ["cielavenir"]
   spec.email         = ["cielartisan@gmail.com"]
-  spec.description   = "a (quick) binding for http://www.libslz.org/"
-  spec.summary       = "a (quick) binding for libslz"
+  spec.description   = "a (light) binding for http://www.libslz.org/"
+  spec.summary       = "a (light) binding for libslz"
   spec.homepage      = "http://github.com/cielavenir/ruby-slz"
   spec.license       = "MIT"
 
