@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "slz"
-  spec.version       = '0.0.0.1' #Slz::VERSION
+  spec.version       = '0.0.0.2' #Slz::VERSION
   spec.authors       = ["cielavenir"]
   spec.email         = ["cielartisan@gmail.com"]
   spec.description   = "a (light) binding for http://www.libslz.org/"
